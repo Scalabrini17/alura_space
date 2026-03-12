@@ -27,3 +27,11 @@ Sair da venv: deactivate
 Para amnater atualizado sempre rodar o:
 
 pip freeze > requirements.txt
+
+----------------------------------------------------------------------------------------------------------
+
+Para upar no git
+
+git remote add origin git@github.com:Scalabrini17/alura_space.git
+git branch -M main
+git push -u origin main
