@@ -1,0 +1,29 @@
+Para a instalação do Bootsrtrap pip:
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+----------------------------------------------------------------------------------------------------------
+
+Para criar o ambiente virtual execute no prompt de comandos no terminal aberto na pasta de seu projeto:
+
+python -m venv venv
+
+.\venv\Scripts\activate
+
+----------------------------------------------------------------------------------------------------------
+
+Resumo do fluxo de trabalho
+Criar: python -m venv venv
+
+Ativar: .\venv\Scripts\activate
+
+Instalar: pip install django
+
+Trabalhar: Começar seu projeto Django!
+
+Sair da venv: deactivate 
+
+----------------------------------------------------------------------------------------------------------
+
+Para amnater atualizado sempre rodar o:
+
+pip freeze > requirements.txt
