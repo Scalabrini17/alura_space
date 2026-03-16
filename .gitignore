@@ -167,6 +167,9 @@ cython_debug/
 #pasta criada pelo autor Scalabrini
 Criação de ambiente virtual PY.txt
 
+#pastra de usuario (não pode vazar de jeito nenhum!!)
+usuarios.md
+
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
