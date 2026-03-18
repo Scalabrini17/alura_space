@@ -35,3 +35,13 @@ Para upar no git
 git remote add origin git@github.com:Scalabrini17/alura_space.git
 git branch -M main
 git push -u origin main
+
+Se precisar de uma ajudinha git no terminal 
+
+1. Alterar o ÚLTIMO commit (Para mudar apenas a mensagem do commit)
+git commit --amend -m "Sua nova mensagem correta aqui"
+
+2 Para adicionar um arquivo que você esqueceu:,
+git add nome_do_arquivo
+Atualize o último commit sem alterar a mensagem original:
+git commit --amend --no-edit
