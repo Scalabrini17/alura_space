@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path, os
 from dotenv import load_dotenv
+from django.contrib.messages import constants as messages
+
 
 load_dotenv()
 
@@ -133,3 +135,13 @@ STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 MEDIA_URL = "/media/"
+
+
+
+#Messsages
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+    messages.SUCCESS: 'success', 
+}
+
