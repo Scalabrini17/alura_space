@@ -1,6 +1,7 @@
 {% load static %}
 
-<div class="pagina-inicial">
+<!-- high -->
+<!-- <div class="pagina-inicial">
         <header class="cabecalho">
             <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space" />
             {% for message in messages %}
@@ -18,7 +19,8 @@
                     </form>
                 </div>
             </div>
-        </header>
+        </header> -->
+
         <main class="principal">
             <section class="menu-lateral">
                 <nav class="menu-lateral__navegacao">
@@ -26,6 +28,9 @@
                     <a href="{% url 'login' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Login</a>
                     <a href="{% url 'cadastro' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Cadastro</a>
                     <a href="{% url 'logout' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Logout</a>
+                    {% if perms.galeria.add_Fotografia %}
+                    <a href="{% url 'nova_imagem' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Nova Imagem</a>
+                    {% endif %}
                 </nav>
             </section>
 

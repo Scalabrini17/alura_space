@@ -5,3 +5,28 @@
         </div>
     {% endfor %}
 {% endif %}
+
+<!-- {% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} messenger-alert">
+            {{message}}
+        </div>
+    {% endfor %}
+
+    <script>
+        // Seleciona todos os alertas
+        const alerts = document.querySelectorAll('.messenger-alert');
+        
+        // Define o tempo (3000ms = 3 segundos)
+        setTimeout(() => {
+            alerts.forEach(alert => {
+                // Adiciona uma transição suave de opacidade
+                alert.style.transition = "opacity 0.5s ease";
+                alert.style.opacity = "0";
+                
+                // Remove o elemento do DOM após a animação
+                setTimeout(() => alert.remove(), 500);
+            });
+        }, 3000); 
+    </script>
+{% endif %} -->

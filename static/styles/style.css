@@ -407,3 +407,18 @@ table {
     --bs-alert-border-color: #b6d4fe;
 }
 
+/* teste de footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Adicione uma cor de fundo para ele não ficar transparente por cima do texto */
+    background-color: #333; 
+}
+
+/* Muito Importante: Adicione um espaçamento no fundo do body igual à 
+   altura do seu footer, senão o footer vai cobrir o final do seu texto! */
+body {
+    padding-bottom: 60px; /* Ajuste esse valor de acordo com a altura do seu footer */
+}
