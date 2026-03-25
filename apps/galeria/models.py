@@ -3,6 +3,7 @@ from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import User
 
+
 class Fotografia(models.Model): 
 
     OPCOES_CATEGORIA = [
@@ -20,6 +21,7 @@ class Fotografia(models.Model):
     publicada = models.BooleanField(default=True)
     data_fotografia = models.DateTimeField(default=datetime.now, blank=False)
     usuario = models.ForeignKey( to=User, on_delete=models.SET_NULL, null=True, blank=False, related_name="user", )
+    urlapi = models.URLField(max_length=100, null=True, blank=True)
 
 
     def __str__(self):
