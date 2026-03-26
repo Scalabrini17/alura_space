@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path, os
 from dotenv import load_dotenv
 from django.contrib.messages import constants as messages
+import cloudinary
+
 
 
 load_dotenv()
@@ -121,11 +123,13 @@ USE_TZ = True
 
 # Configurações Globais de Storade Cloudinary
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': str(os.getenv('CLOUD_NAME')),
-    'API_KEY': str(os.getenv('API_KEY')),
-    'API_SECRET': str(os.getenv('API_SECRET'))
-}
+CLOUDINARY_URL= os.getenv('CLOUDINARY_URL')
+
+cloudinary.config( 
+  cloud_name = os.getenv('CLOUD_NAME'), 
+  api_key = os.getenv('API_KEY'), 
+  api_secret = os.getenv('API_SECRET')
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
